@@ -5,8 +5,8 @@ class Api::V1::LinksController < ApplicationController
     link = Link.find_or_initialize_by(url: params[:link])
     if link.save
       link.count += 1
-      UrlHotBoxService.update
-      render json: {message: "Updated Hot Reads"}
+      hot_reads = Link.top_ten
+      render json: {message: "Updated Hot Reads", current_hot_reads: hot_reads}
     else
       render status: 400
     end

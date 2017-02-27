@@ -6,10 +6,10 @@ describe "POST api/v1/links" do
       params = {link: "https://url.com"}
       post '/api/v1/links', params: params
 
-      message = JSON.parse(response.body)
+      link_response = JSON.parse(response.body)
 
       expect(response).to be_success
-      expect(message['message']).to eq("Updated Hot Reads")
+      expect(link_response['message']).to eq("Updated Hot Reads")
     end
   end
 end
