@@ -7,8 +7,9 @@ describe "POST api/v1/links" do
       post '/api/v1/links', params: params
 
       message = JSON.parse(response.body)
+
       expect(response).to be_success
-      expect(message).to eq("Updated Hot Reads")
+      expect(message['message']).to eq("Updated Hot Reads")
     end
   end
 end
