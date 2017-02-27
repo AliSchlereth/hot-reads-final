@@ -17,6 +17,6 @@ describe "user visits links_page" do
 
     visit root_path
 
-    expect(page).to have_content("Url:https://a.com count:16 Url:https://b.com count:15 Url:https://c.com count:14 Url:https://d.com count:13 Url:https://e.com count:12 Url:https://f.com count:11 Url:https://g.com count:10 Url:https://h.com count:9 Url:https://i.com count:8 Url:https://j.com count:7")
+    expect(page).to have_content("Url:https://a.com Count:16 Url:https://b.com Count:15 Url:https://c.com Count:14 Url:https://d.com Count:13 Url:https://e.com Count:12 Url:https://f.com Count:11 Url:https://g.com Count:10 Url:https://h.com Count:9 Url:https://i.com Count:8 Url:https://j.com Count:7")
   end
 end
