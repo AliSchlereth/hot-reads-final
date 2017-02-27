@@ -1,7 +1,6 @@
 class UrLockBoxService
 
-  def self.update
-    binding.pry
-  end
+  # def self.update
+  # end
 
 end
