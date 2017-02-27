@@ -1,0 +1,7 @@
+<h1> Hot Reads</h1>
+
+<h3>Top Ten Reads Across Users</h3>
+<hr/>
+<% @links.each do |link| %>
+  <ol><%= link.url %>  <%= link.count %></ol>
+<% end  %>
