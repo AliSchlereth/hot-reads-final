@@ -10,6 +10,7 @@ describe "POST api/v1/links" do
 
       expect(response).to be_success
       expect(link_response['message']).to eq("Updated Hot Reads")
+      binding.pry
     end
   end
 end
